@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Check } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import appMockup from "@/assets/app-mockup.png";
+import appMockup from "@/assets/phone-mockup.png";
 
 const appFeatures = [
   "Rastreamento em tempo real",
@@ -68,24 +68,35 @@ const AppSection = () => {
 
           {/* App Mockup */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-            className="relative flex justify-center"
-          >
-            <div className="relative">
-              {/* Glow Effect */}
-              <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full scale-75" />
-              
-              {/* Phone Image */}
-              <img
-                src={appMockup}
-                alt="Aplicativo ForteGPS"
-                className="relative z-10 w-72 md:w-80 lg:w-96 animate-float drop-shadow-2xl"
-              />
-            </div>
-          </motion.div>
+  initial={{ opacity: 0, x: 50 }}
+  whileInView={{ opacity: 1, x: 0 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: true }}
+  className="relative flex justify-center lg:justify-end"
+>
+  <div className="relative lg:translate-x-6">
+    {/* Glow */}
+    <div className="absolute inset-0 flex items-center justify-center">
+      <div className="w-[70%] h-[70%] bg-primary/30 blur-[120px] rounded-full" />
+    </div>
+
+    {/* Phone */}
+    <img
+      src={appMockup}
+      alt="Aplicativo ForteGPS"
+      className="
+        relative z-10
+        w-80
+        md:w-[420px]
+        lg:w-[520px]
+        xl:w-[500px]
+        animate-float
+        drop-shadow-[0_40px_80px_rgba(0,0,0,0.6)]
+      "
+    />
+  </div>
+</motion.div>
+
         </div>
       </div>
     </section>

@@ -1,12 +1,11 @@
 import { motion } from "framer-motion";
-import { MessageCircle } from "lucide-react";
+import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsAppFloat = () => {
-  const whatsappLink = "https://wa.me/558532221684?text=Olá! Gostaria de saber mais sobre o rastreamento veicular.";
-
+  const whatsappUrl = "https://wa.me/558598350842";
   return (
     <motion.a
-      href={whatsappLink}
+      href={whatsappUrl}
       target="_blank"
       rel="noopener noreferrer"
       initial={{ scale: 0 }}
@@ -17,7 +16,7 @@ const WhatsAppFloat = () => {
       className="fixed bottom-6 right-6 z-50 w-14 h-14 md:w-16 md:h-16 bg-[hsl(142_70%_45%)] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-shadow animate-pulse-glow"
       aria-label="Falar no WhatsApp"
     >
-      <MessageCircle className="w-7 h-7 md:w-8 md:h-8 text-primary-foreground" />
+      <FaWhatsapp size={28} />
     </motion.a>
   );
 };

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Phone, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const whatsappLink = "https://wa.me/558532221684?text=Olá! Gostaria de saber mais sobre o rastreamento veicular.";
@@ -16,10 +17,9 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <MapPin className="w-8 h-8 text-primary" />
-            <span className="text-xl md:text-2xl font-bold">
-              Forte<span className="text-primary">GPS</span>
-            </span>
+            <Link to="/" className="flex items-center">
+              <img src="/logo.png" alt="ForteGPS" className="w-auto h-12 md:h-14" />
+            </Link>
           </div>
 
           {/* Contact Info - Hidden on mobile */}

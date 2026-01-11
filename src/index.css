@@ -7,6 +7,10 @@ All colors MUST be HSL.
 */
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   :root {
     --background: 220 20% 6%;
     --foreground: 0 0% 98%;
@@ -39,13 +43,33 @@ All colors MUST be HSL.
     --radius: 0.75rem;
 
     /* Custom tokens */
-    --gradient-hero: linear-gradient(135deg, hsl(220 20% 6%) 0%, hsl(220 25% 12%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(220 18% 12%) 0%, hsl(220 18% 8%) 100%);
-    --gradient-cta: linear-gradient(135deg, hsl(142 76% 45%) 0%, hsl(142 70% 38%) 100%);
-    --gradient-secondary: linear-gradient(135deg, hsl(200 85% 50%) 0%, hsl(200 80% 40%) 100%);
+    --gradient-hero: linear-gradient(
+      135deg,
+      hsl(220 20% 6%) 0%,
+      hsl(220 25% 12%) 100%
+    );
+    --gradient-card: linear-gradient(
+      180deg,
+      hsl(220 18% 12%) 0%,
+      hsl(220 18% 8%) 100%
+    );
+    --gradient-cta: linear-gradient(
+      135deg,
+      hsl(142 76% 45%) 0%,
+      hsl(142 70% 38%) 100%
+    );
+    --gradient-secondary: linear-gradient(
+      135deg,
+      hsl(200 85% 50%) 0%,
+      hsl(200 80% 40%) 100%
+    );
     --shadow-glow: 0 0 40px hsl(142 76% 45% / 0.3);
     --shadow-card: 0 8px 32px hsl(0 0% 0% / 0.4);
-    --text-gradient: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(220 10% 70%) 100%);
+    --text-gradient: linear-gradient(
+      135deg,
+      hsl(0 0% 100%) 0%,
+      hsl(220 10% 70%) 100%
+    );
 
     --sidebar-background: 220 20% 6%;
     --sidebar-foreground: 0 0% 98%;
@@ -65,10 +89,15 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: "Inter", system-ui, sans-serif;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-bold tracking-tight;
   }
 }
