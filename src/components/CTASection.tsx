@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { AlertTriangle, Phone } from "lucide-react";
+import { AlertTriangle, Phone, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const CTASection = () => {
@@ -36,6 +36,7 @@ const CTASection = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="cta" size="xl" asChild>
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                <Shield className="w-5 h-5 mr-2 text-white" />
                 Proteger Meu Veículo Agora
               </a>
             </Button>
