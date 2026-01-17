@@ -37,7 +37,7 @@ const CTASection = () => {
             <Button variant="cta" size="xl" asChild>
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
                 <Shield className="w-5 h-5 mr-2 text-white" />
-                Proteger Meu Veículo Agora
+                Proteger meu veículo
               </a>
             </Button>
             <Button variant="outline" size="xl" asChild>

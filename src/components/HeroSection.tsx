@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import { Shield, Clock, Smartphone, Lock } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroCar from "@/assets/hero-car.jpg";
+// import heroCar from "@/assets/hero-car.jpg";
+import heroRoubo from "@/assets/hero-roubo.webp";
 
 const HeroSection = () => {
   const whatsappLink = "https://wa.me/558532221684?text=Olá! Gostaria de proteger meu veículo com a ForteGPS.";
@@ -18,8 +19,8 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src={heroCar}
-          alt="Veículo protegido"
+          src={heroRoubo}
+          alt="Roubo de veículo"
           className="w-full h-full object-cover opacity-40"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-background via-background/80 to-transparent" />

@@ -32,8 +32,8 @@ const AppSection = () => {
               Aplicativo
             </span>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-              A proteção do seu veículo a{" "}
-              <span className="text-primary">um toque de distância</span>
+              A segurança do seu veículo {" "}
+              <span className="text-primary">em um simples toque.</span>
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
               Com o aplicativo da ForteGPS você tem o controle total do seu veículo na palma da mão, 
@@ -62,41 +62,41 @@ const AppSection = () => {
             <Button variant="cta" size="xl" asChild>
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
                 <Shield className="w-5 h-5 mr-3 text-white" />
-                Quero Conhecer o App
+                Conhecer o App
               </a>
             </Button>
           </motion.div>
 
           {/* App Mockup */}
           <motion.div
-  initial={{ opacity: 0, x: 50 }}
-  whileInView={{ opacity: 1, x: 0 }}
-  transition={{ duration: 0.6 }}
-  viewport={{ once: true }}
-  className="relative flex justify-center lg:justify-end"
->
-  <div className="relative lg:translate-x-6">
-    {/* Glow */}
-    <div className="absolute inset-0 flex items-center justify-center">
-      <div className="w-[70%] h-[70%] bg-primary/30 blur-[120px] rounded-full" />
-    </div>
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="relative flex justify-center lg:justify-end"
+          >
+            <div className="relative lg:translate-x-6">
+              {/* Glow */}
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-[70%] h-[70%] bg-primary/30 blur-[120px] rounded-full" />
+              </div>
 
-    {/* Phone */}
-    <img
-      src={appMockup}
-      alt="Aplicativo ForteGPS"
-      className="
-        relative z-10
-        w-80
-        md:w-[420px]
-        lg:w-[520px]
-        xl:w-[500px]
-        animate-float
-        drop-shadow-[0_40px_80px_rgba(0,0,0,0.6)]
-      "
-    />
-  </div>
-</motion.div>
+              {/* Phone */}
+              <img
+                src={appMockup}
+                alt="Aplicativo ForteGPS"
+                className="
+                  relative z-10
+                  w-80
+                  md:w-[420px]
+                  lg:w-[520px]
+                  xl:w-[500px]
+                  animate-float
+                  drop-shadow-[0_40px_80px_rgba(0,0,0,0.6)]
+                "
+              />
+            </div>
+          </motion.div>
 
         </div>
       </div>

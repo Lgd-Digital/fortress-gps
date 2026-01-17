@@ -33,7 +33,7 @@ const PlansCardCarsMotos: React.FC = () => {
     {
       id: 'moto-anual',
       title: 'Plano Essencial Moto',
-      price: '49,90',
+      price: '49,99',
       icon: Bike,
       features: [
         'Central de Emergência 24h',
@@ -47,7 +47,7 @@ const PlansCardCarsMotos: React.FC = () => {
     {
       id: 'moto-anual-assistencia',
       title: 'Plano Premium Moto',
-      price: '65,90',
+      price: '64,99',
       icon: Bike,
       badge: 'MELHOR CUSTO-BENEFÍCIO',
       isPopular: true,
@@ -209,26 +209,25 @@ const PlansCardCarsMotos: React.FC = () => {
 
       <div className="container px-4 mx-auto">
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 mb-6"
-          >
-            <ShieldCheck className="w-4 h-4 text-primary" />
-            <span className="text-xs font-bold text-primary uppercase tracking-wider">Proteção Garantida</span>
-          </motion.div>
-          
-          <motion.h2
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.1 }}
-            className="text-3xl md:text-5xl font-bold mb-6"
-          >
-            Escolha o melhor plano para o seu <span className="text-primary">veículo</span>
-          </motion.h2>
-          
+          <div className="flex items-center justify-center mb-6 flex-wrap">
+            <motion.h2
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: 0.1 }}
+              className="flex items-start justify-center text-3xl md:text-5xl font-bold"
+            >
+              <div className="inline-flex items-center justify-center bg-primary rounded-full p-2 shrink-0 mt-1">
+                <ShieldCheck className="w-5 h-5 text-primary-foreground" />
+              </div>
+
+              <p>
+                Escolha o melhor plano para o seu{" "}
+                <span className="text-primary">veículo</span>
+              </p>
+            </motion.h2>
+          </div>
+       
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -282,13 +281,18 @@ const PlansCardCarsMotos: React.FC = () => {
           className="mt-20 p-8 rounded-3xl bg-gradient-to-r from-card/80 to-card border border-border/50 text-center max-w-4xl mx-auto backdrop-blur-sm"
         >
           <h3 className="text-2xl font-bold mb-4">Dúvidas sobre qual escolher?</h3>
-          <p className="text-muted-foreground mb-8">
-            Nossos consultores estão prontos para ajudar você a encontrar a solução ideal de acordo com suas necessidades.
-          </p>
+          <div className="flex flex-col gap-1 mb-6">
+            <p className="text-muted-foreground">
+              Para quem não tem seguro mas não abre mão de sua segurança.
+            </p>
+            <p className="text-muted-foreground">
+              Nossos consultores estão prontos para ajudar você a encontrar a solução ideal de acordo com suas necessidades.
+            </p>
+          </div>
           <Button variant="whatsapp" size="xl" className="rounded-2xl" asChild>
             <a href="https://wa.me/558532221684" target="_blank" rel="noopener noreferrer">
               <FaWhatsapp className="mr-2 text-xl" />
-              Falar com um Especialista Agora
+              Falar com um Especialista
             </a>
           </Button>
           <div className="mt-6 flex flex-wrap justify-center gap-6 text-xs text-muted-foreground">

@@ -63,7 +63,7 @@ const FeaturesSection = () => {
             Funcionalidades
           </span>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            Proteção completa para seu veículo
+            Segurança completa para seu veículo
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             Tecnologia de ponta combinada com atendimento humanizado para garantir a segurança do seu patrimônio.
