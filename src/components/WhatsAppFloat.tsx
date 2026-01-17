@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { FaWhatsapp } from 'react-icons/fa';
 
 const WhatsAppFloat = () => {
-  const whatsappUrl = "https://wa.me/558598350842";
+  const whatsappUrl = "https://api.whatsapp.com/send/?phone=558532221684&text&type=phone_number&app_absent=0";
   return (
     <motion.a
       href={whatsappUrl}
