@@ -1,14 +1,44 @@
+# Robots.txt para ForteGPS
+# https://fortegps.com.br/robots.txt
+
+# Sitemap
+Sitemap: https://fortegps.com.br/sitemap.xml
+
+# Googlebot
 User-agent: Googlebot
 Allow: /
+Crawl-delay: 0
 
+# Bingbot
 User-agent: Bingbot
 Allow: /
+Crawl-delay: 0
 
+# Twitterbot
 User-agent: Twitterbot
 Allow: /
 
+# Facebook
 User-agent: facebookexternalhit
 Allow: /
 
+# Instagram
+User-agent: InstagramBot
+Allow: /
+
+# LinkedIn
+User-agent: LinkedInBot
+Allow: /
+
+# WhatsApp
+User-agent: WhatsApp
+Allow: /
+
+# Todos os outros bots
 User-agent: *
 Allow: /
+Crawl-delay: 1
+
+# Disallow (se necessário no futuro)
+# Disallow: /admin/
+# Disallow: /api/
